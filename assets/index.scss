@@ -1,13 +1,12 @@
 @import "./styles/layout/settings";
-@import "./styles/layout/header";
-@import "./styles/layout/body";
-@import "./styles/layout/navbar";
-@import "./styles/layout/footer";
-@import "./styles/componants/button";
-@import "./styles/componants/form";
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+@import "./styles/layout/body";
+@import "./styles/layout/header";
+@import "./styles/layout/navbar";
+@import "./styles/layout/footer";
+@import "./styles/componants/button";
+@import "./styles/componants/form";
