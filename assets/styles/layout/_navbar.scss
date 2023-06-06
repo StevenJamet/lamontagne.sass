@@ -6,17 +6,24 @@ nav{
     padding: 15px  ;
     ul{
         background-color: rgba(245, 245, 245, 0.406);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Inter-VariableFont", sans-serif;
+    
+    background: rgba(245, 245, 245, 0.3);
+
 
     }
     .link-page{
-        display: flex;
-        li{
-            text-transform: uppercase;
-            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+                
+            li{
+                font-size: 0.8rem;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                list-style-type: none;
             font-size: 0.6rem;
             padding:25px 15px;
             letter-spacing:1.5px;
@@ -29,19 +36,20 @@ nav{
             }
             
             
-            a{
-                text-decoration: none;
-                color: $white;
+                a{
+                    text-decoration: none;
+                    color: $white;   
                 &:hover{
                     color: $black;
-                   
-                }
-            }
+
+            }   
+        }
+            
         }
     }
     .social-link{
 
-        i{
+            i{
             padding: 10px 15px;
             font-size: 1rem;
             color:$white;

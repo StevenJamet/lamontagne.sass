@@ -34,21 +34,21 @@ body {
 }
 
 nav {
-  font-family: "Inter-VariableFont", sans-serif;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 15px;
-}
-nav ul {
-  background-color: rgba(245, 245, 245, 0.406);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Inter-VariableFont", sans-serif;
+  background: rgba(245, 245, 245, 0.3);
 }
-nav .link-page {
+nav .page-link ul {
   display: flex;
+  justify-content: space-between;
 }
-nav .link-page li {
+nav .page-link ul li {
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
   list-style-type: none;
   font-size: 0.6rem;
@@ -56,19 +56,15 @@ nav .link-page li {
   letter-spacing: 1.5px;
   font-weight: bold;
 }
-nav .link-page li:hover {
+nav .page-link ul li:hover {
   background: whitesmoke;
   color: rgb(25, 25, 25);
 }
-nav .link-page li:active {
-  color: rgb(25, 25, 25);
-  background: whitesmoke;
-}
-nav .link-page li a {
+nav .page-link ul a {
   text-decoration: none;
   color: rgb(241, 241, 241);
 }
-nav .link-page li a:hover {
+nav .page-link ul a:hover {
   color: rgb(25, 25, 25);
 }
 nav .social-link i {
