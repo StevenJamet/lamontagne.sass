@@ -5,3 +5,9 @@
 @import "./styles/layout/footer";
 @import "./styles/componants/button";
 @import "./styles/componants/form";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

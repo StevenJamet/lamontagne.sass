@@ -1,0 +1,55 @@
+nav{
+    font-family: "Inter-VariableFont",sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+
+    padding: 15px  ;
+    ul{
+        background-color: rgba(245, 245, 245, 0.406);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+
+    }
+    .link-page{
+        display: flex;
+        li{
+            text-transform: uppercase;
+            list-style-type: none;
+            font-size: 0.6rem;
+            padding:25px 15px;
+            letter-spacing:1.5px;
+            font-weight: bold;
+            &:hover{
+                background: whitesmoke;
+                color: $black;
+            }
+            
+            }
+            
+            
+            a{
+                text-decoration: none;
+                color: $white;
+                &:hover{
+                    color: $black;
+                   
+                }
+            }
+        }
+    }
+    .social-link{
+
+        i{
+            padding: 10px 15px;
+            font-size: 1rem;
+            color:$white;
+            &:hover{
+                font-size: 1.3rem;
+                transition: 0.1s;
+            }
+
+        }
+    }
+}

@@ -1,15 +1,29 @@
 header{
     text-align: center;
-    margin: 150px 0 150px 0;
+    margin: 150px auto;
     max-width: 800px;
+
 
         h1{
             font-family: "Inter-VariableFont", sans-serif;
             text-transform: uppercase;
-            font-size: 3rem;
-                p{
-                    font-style: italic;
-                    font-size: 0.8rem;
-                }
+            font-size: 4rem;
+            max-width: 550px;
+            margin: 10px auto;
+            color: $white; 
         }
+        p{
+            font-family: "Merriweather-light", sans-serif;
+            color: $white;
+            font-style: italic;
+            font-size: 1.1rem;
+        }
+        
+        i{
+            font-size: 3.5rem;
+            margin-top: 50px;
+            color: $white;
+
+        }
+        
 }
