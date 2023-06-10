@@ -136,7 +136,7 @@ nav ul .slide {
 .section1 .date::before {
   content: "";
   position: absolute;
-  width: 320px;
+  width: 35%;
   height: 1px;
   background: rgb(206, 206, 206);
   bottom: 10px;
@@ -145,7 +145,7 @@ nav ul .slide {
 .section1 .date::after {
   content: "";
   position: absolute;
-  width: 320px;
+  width: 35%;
   height: 1px;
   background: rgb(206, 206, 206);
   bottom: 10px;
