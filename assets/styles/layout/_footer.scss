@@ -1,6 +1,68 @@
 .footer-container
 {
-    display: flex;
-    justify-content: space-between;
-    background: $color1
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: $color1;
+    margin: 30px auto 30px auto;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        background: $color3;
+        left: 50%;
+        top: 0;
+    }
+    .footer{
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .contact-details{
+            display: grid;
+            grid-template-columns: 30% 70%;
+            align-items: center;
+            padding: 30px 15px;
+            ul{
+                display: flex;
+                justify-content: space-between;
+                width: 33%;
+                li{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        border: solid 1px $black;
+                        width: 35px;
+                        height: 35px;
+                        margin: 0 20px 0 0;
+                        border-radius: 20px;
+                        display: inline-block;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        i{
+                            color: $black;
+                            
+                        }
+                    }
+                }
+                
+            }
+            
+            
+            
+        }
+        h6{
+            font-size: 0.8rem;
+            font-family: "Inter-VariableFont", sans-serif;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: $color2;
+        }
+        p{
+            color: $color3;
+        }
+    }
 }
