@@ -1,13 +1,78 @@
-$black: rgb(25, 25, 25);
-$white: rgb(241 241 241);
-$color1: rgb(235, 235, 235);
-$color2: rgb(100, 100, 100);
-$color3: rgb(206, 206, 206);
-
 @font-face {
-    font-family: "Inter-VariableFont";
-    src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
-    font-family: "Merriweather-Light";
-    src: url(/assets/fonts/Merriweather-Light.ttf);
+    font-family: "Inter";
+    src: url(/assets/fonts/Inter.ttf);
+}
+@font-face {
+    font-family: "Merri";
+    src: url(/assets/fonts/Merri.ttf);
+}
 
+$font1: Inter, sans-serif;
+$font2: Merri, serif;
+$black: rgb(17, 17, 17);
+$white: rgb(243, 243, 243);
+$grey1: rgb(233, 233, 233);
+$grey2: rgb(105, 105, 105);
+$grey3: rgb(209, 209, 209);
+
+@mixin title{
+    font-family: $font1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+li{
+    list-style: none;
+}
+a,
+a:visited{
+    color: $white;
+}
+body{
+    background: url(/assets/img/bg.jpg);
+    text-align: center;
+    font-family: $font2;
+    max-width: 1300px;
+    margin: 0 auto;
+
+    &:before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: $black;
+        animation: animBefore 1.5s ease forwards;
+        animation-delay: 0.15s;
+
+        @keyframes animBefore{
+            to{
+                opacity: 0;
+            }
+        }
+    }
+}
+
+.btn{
+    background: none;
+    border: 2px solid $black;
+    width: 170px;
+    height: 45px;
+    font-size: 0.75rem;
+    cursor: pointer;
+    @include title;
+    transition: 0.2s;
+
+    &:hover{
+        transform: scale(1.05);
+    }
 }
